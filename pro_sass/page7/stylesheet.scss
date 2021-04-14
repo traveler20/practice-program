@@ -1,0 +1,42 @@
+$blue: #0ac4ff;
+$pink: #fd6eb6;
+
+.main {
+  margin: 10px;
+  
+  li {
+    list-style: none;
+    float: left;
+    height: 100px;
+    width: 33%;
+    margin-bottom: 10px;
+  }
+  
+  .blue1 {
+    background-color: $blue;
+  }
+  
+  .blue2 {
+    // 色を$blue、値を10%としてdarken関数を用いてください
+    background-color: darken($blue, 10%);
+  }
+  
+  .blue3 {
+    // 色を$blue、値を20%としてdarken関数を用いてください
+    background-color: darken($blue, 20%);
+  }
+  
+  .pink1 {
+    background-color: $pink;
+  }
+  
+  .pink2 {
+    // 色を$pink、値を10%としてlighten関数を用いてください
+    background-color: lighten($pink, 10%);
+  }
+  
+  .pink3 {
+    // 色を$pink、値を10%としてlighten関数を用いてください
+    background-color: lighten($pink, 20%);
+  }
+}

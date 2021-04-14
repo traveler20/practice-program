@@ -1,0 +1,35 @@
+// 引数$colorを受け取れるようにしてください
+@mixin circle($color) {
+  display: inline-block;
+  border-radius: 50%;
+  margin-left: 10px;
+  text-align: center;
+  // 引数$colorを用いて背景色を変更してください
+  background-color: $color;
+}
+
+.main {
+  margin: 20px 10px;
+  color: #ffffff;
+  
+  .small {
+    // 引数に「#20efae」を指定してください
+    @include circle(#20efae);
+    width: 34px;
+    height: 34px;
+  }
+  
+  .medium {
+    // 引数に「#61cbff」を指定してください
+    @include circle(#61cbff);
+    width: 62px;
+    height: 62px;
+  }
+  
+  .large {
+    // 引数に「#a070f7」を指定してください
+    @include circle(#a070f7);
+    width: 90px;
+    height: 90px;
+  }
+}
