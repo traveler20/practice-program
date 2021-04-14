@@ -1,0 +1,30 @@
+// 変数$wanko-colorを定義してください
+$wanko-color: #7579a3;
+
+.main {
+  margin: 20px;
+  border-radius: 5px;
+
+  .title {
+    font-size: 32px;
+    margin-bottom: 5px;
+    // 文字の色に変数$wanko-colorの値を指定してください
+    color: $wanko-color;
+  }
+
+  .description {
+    color: #5f6977;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  .button {
+    // 背景色に変数$wanko-colorの値を指定してください
+    background-color: $wanko-color;
+    display: inline-block;
+    color: #ffffff;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+}

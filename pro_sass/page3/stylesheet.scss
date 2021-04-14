@@ -1,0 +1,21 @@
+.main {
+  margin: 20px;
+  
+  .title {
+    margin-bottom: 10px;
+    padding-bottom: 3px;
+    border-bottom: 1px solid #888;
+    color: #555;
+  }
+  
+  li {
+    list-style: none;
+    color: #b5afaf;
+    line-height: 26px;
+    
+    // current-pageクラスに対するコードを追加してください
+    &.current-page {
+      color: #f74c90;
+    }
+  }
+}
