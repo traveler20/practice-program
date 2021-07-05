@@ -1,0 +1,70 @@
+@charset "UTF-8";
+/* @mixin cardに引数を与えてください */
+body {
+  min-width: 460px;
+  text-align: center;
+  font-family: "Hiragino Kaku Gothic ProN";
+  background-color: #f0f5fc;
+}
+
+header {
+  width: 100%;
+  padding: 10px 0;
+  display: inline-block;
+  background-color: #7579a3;
+  color: #ffffff;
+  font-size: 14px;
+  text-align: center;
+}
+
+.profile {
+  padding: 56px 0;
+  margin: 0 auto 32px;
+  background-color: #ffffff;
+}
+
+.profile .info {
+  margin-top: 16px;
+}
+
+.profile .info p {
+  color: #2b546a;
+}
+
+/* @include cardの引数に値を指定してください */
+.html {
+  padding: 40px 28px;
+  margin: 16px 8px;
+  display: inline-block;
+  border-radius: 3px;
+  /* background-colorの値を変えてください */
+  background-color: #1bd7cf;
+}
+
+.html img {
+  margin: 16px auto 20px;
+  display: block;
+}
+
+/* @include cardの引数に値を指定してください */
+.javascript {
+  padding: 40px 28px;
+  margin: 16px 8px;
+  display: inline-block;
+  border-radius: 3px;
+  /* background-colorの値を変えてください */
+  background-color: #ffe400;
+}
+
+.javascript img {
+  margin: 16px auto 20px;
+  display: block;
+}
+
+footer {
+  margin: 100px 0 32px;
+  color: #2b546a;
+  font-size: 14px;
+  text-align: center;
+}
+/*# sourceMappingURL=stylesheet.css.map */
