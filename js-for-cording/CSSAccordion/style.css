@@ -1,0 +1,48 @@
+/*ボックス全体のスタイリング*/
+.accbox {
+	margin: 2em 0;
+	padding: 0;
+	/*ボックスの最大幅設定*/
+	max-width: 400px;
+}
+
+/*メニュータイトル部分のスタイリング*/
+.accbox label {
+	display: block;
+	margin: 1.5px 0;
+	padding: 11px 12px;
+	/*メニュータイトル部分の文字設定*/
+	color: #ffffff;
+	font-weight: bold;
+	/*メニュータイトル部分の背景設定*/
+	background: #1b7c26;
+	cursor: pointer;
+	transition: all 0.5s;
+}
+
+/*メニュータイトルにカーソルをあわせたとき*/
+.accbox label:hover {
+	background: #07220b;
+}
+
+/*チェックボックスを非表示*/
+.accbox input {
+	display: none;
+}
+
+/*メニュー内のコンテンツを非表示*/
+.accbox .accshow {
+	height: 0;
+	padding: 0;
+	overflow: hidden;
+	opacity: 0;
+	transition: 0.8s;
+}
+
+/*クリックでメニュー内のコンテンツ表示*/
+.cssacc:checked + .accshow {
+	height: auto;
+	padding: 5px;
+	background: #eaeaea;
+	opacity: 1;
+}

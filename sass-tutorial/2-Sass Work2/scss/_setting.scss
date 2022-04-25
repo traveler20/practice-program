@@ -1,0 +1,84 @@
+/* --------------------------------------------------------------------
+setting.scss
+-------------------------------------------------------------------- */
+
+// Global colors
+// -------------------------
+$black:                 #000000;
+$lightBlack:            #333333;
+$darkGray:              #666666;
+$gray:                  #999999;
+$lightGray:             #cccccc;
+$white:                 #ffffff;
+$red:                   #c0171d;
+$blue:                  #0088cc;
+$orange:                #ffb801;
+$cian:                  #2abfbf;
+
+
+// Scaffolding
+// -------------------------
+$bodyBackground:        $white;
+$textColor:             $lightBlack;
+$primaryColor:          $red;
+
+// Typography
+// -------------------------
+$baseFontFamily:        'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
+$baseFontSize:          10px;
+$baseLineHeight:        1.6;
+
+// Indivisual
+// -------------------------
+$contentWidth_pc:       960px;
+$contentWidth_tab:      640px;
+$contentWidth_sp:       480px;
+$maincontentWidth_pc:   740px;
+$sidebarWidth_pc:       250px;
+
+
+// Typography
+// -------------------------
+html{
+	font-size: 10px;
+}
+body {
+	background-color: #ffffff;
+	position: relative;
+	color: #333333;
+	font-family: 'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
+	line-height: 1.6;
+}
+a {
+	color: #c0171d;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+
+// Headings
+// -------------------------
+h1, h2, h3, h4, h5, h6 {
+	font-weight: bold;
+}
+
+h1 { font-size:24px; }
+h2 { font-size:20px; }
+h3 { font-size:16px; }
+h4 { font-size:14px; }
+h5 { font-size:12px; }
+h6 { font-size:10px; }
+
+// Body text
+// -------------------------
+p,li,dt,dd {
+	font-size:12px;
+}
+
+// Emphasis & misc
+// -------------------------
+small   { font-size: 85%; }
+strong  { font-weight: bold; }
+em      { font-style: italic; }
+cite    { font-style: normal; }

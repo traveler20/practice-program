@@ -1,0 +1,31 @@
+#main {
+	article {
+		margin-bottom: 50px;
+		h1 {
+			font-size: 140%;
+		}
+		p, ul {
+			margin-bottom: 1.5em;
+		}
+		ul {
+			li.list1 {
+				font-size: 110%;
+			}
+			li.list2 {
+				font-size: 120%;
+			}
+			li.list3 {
+				font-size: 130%;
+			}
+			li.list4 {
+				font-size: 140%;
+			}
+			li.list5 {
+				font-size: 150%;
+			}
+		}
+		p.notes {
+			color: red;
+		}
+	}
+}

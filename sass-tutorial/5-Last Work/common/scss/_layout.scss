@@ -1,0 +1,204 @@
+// _layout.scss
+// --------------------------------------------------------------------
+
+.container{
+	width: $contentWidth_pc;
+	@include center-block;
+}
+
+//header ======================================================
+#header{
+	#logo{
+		margin: 20px;
+		@include sprite-background(logo, $sprites-map01, $sprites-img01, 1);
+		@include hide-text();
+	}
+}
+
+//nav ======================================================
+#nav{
+	margin-bottom: 20px;
+	#grobalNav{
+		@extend .clearfix;
+		li{
+			float: left;
+			width: (100%/6);
+			a{
+				padding: 10px;
+				background-color: $darkGray;
+				display: block;
+				text-align: center;
+				text-decoration: none;
+				color: #fff;
+				border-right: 1px solid $gray;
+				&:hover{
+				 background-color: $gray;
+				}
+			}
+		}
+	}
+}
+
+//mainImg ======================================================
+#mainImg{
+	margin-bottom: 20px;
+	p img {
+		width: 100%;
+	}
+}
+
+//wrapper ======================================================
+#wrapper{
+	@extend .clearfix;
+}
+
+//mainContent ======================================================
+#mainContent{
+	float: left;
+	width: $maincontentWidth_pc;
+	h2{
+		padding-bottom: 5px;
+		margin-bottom: 20px;
+		border-bottom: 1px solid $lightGray;
+		padding-left: 25px;
+		position: relative;
+		&:before {
+			display: block;
+			position: absolute;
+			top: 20%;
+			left: 0;
+			@include sprite-background(icon_header_design, $sprites-map01, $sprites-img01, 2);
+			content: "";
+		}
+	}
+	section{
+		@extend .clearfix;
+		margin-bottom: 20px;
+		figure{
+			float: left;
+			width: 35%;
+			img{
+				width: 100%;
+				@include box-shadow(3px 3px 10px rgba(0,0,0,.4));
+			}
+		}
+		.section-content{
+			float: right;
+			width: 62%;
+			h3,p{
+				margin-bottom: 10px;
+			}
+			.btn{
+				padding: 10px;
+				background-color: $lightGray;
+				display: inline-block;
+				color: $lightBlack;
+				text-decoration: none;
+				font-weight: bold;
+				text-align: center;
+				@include border-radius(5px);
+				@include opacity-rollover();
+			}
+		}
+	}
+}
+
+//sidebar ======================================================
+#sidebar{
+	float: right;
+	width: $sidebarWidth_pc;
+	section{
+		margin-bottom: 40px;
+		h2{
+			padding-bottom: 5px;
+			margin-bottom: 15px;
+			border-bottom: 1px solid $lightGray;
+			padding-left: 25px;
+			position: relative;
+			&:before {
+				display: block;
+				position: absolute;
+				top: 20%;
+				left: 0;
+				content: "";
+			}
+		}
+		&.list{
+			h2{
+				&:before {
+					@include sprite-background(icon_header_direction, $sprites-map01, $sprites-img01, 2);
+				}
+			}
+			li{
+				margin-bottom: 10px;
+				padding-left: 20px;
+				position: relative;
+				&:before {
+					display: block;
+					position: absolute;
+					top: 2px;
+					left: 0;
+					@include sprite-background(icon_arrow, $sprites-map01, $sprites-img01, 3);
+					content: "";
+				}
+				@include media(iphone) {
+					display: block;
+					margin: 0 -20px 0px;
+					border-bottom: 1px solid $lightGray;
+					padding-left: 0;
+					&:before{
+						display: none;
+					}
+					&:last-child{
+						border-bottom: none;
+					}
+					a{
+						position: relative;
+						display: block;
+						margin: 0;
+						padding: 15px 35px 15px 20px;
+						background: #eee;
+						color: $lightBlack;
+						font-weight: bold;
+						text-decoration: none;
+					}
+					a:after{
+						display: block;
+						position: absolute;
+						top: 40%;
+						right: 15px;
+						@include sprite-background(icon_arrow, $sprites-map01, $sprites-img01, 2);
+						content: "";
+					}
+				}
+			}
+		}
+		&.banner{
+			h2{
+				&:before {
+					@include sprite-background(icon_header_develop, $sprites-map01, $sprites-img01, 2);
+				}
+			}
+			li{
+				margin-bottom: 10px;
+				img{
+					width: 100%;
+					@include opacity-rollover(.6);
+				}
+			}
+		}
+	}
+}
+
+//footer ======================================================
+#footer{
+	border-top: 1px solid $lightGray;
+	padding: 10px 0;
+	@extend .clearfix;
+	.copyright{
+		float: left;
+	}
+	.company{
+		float: right;
+	}
+}

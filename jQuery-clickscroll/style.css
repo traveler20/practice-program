@@ -1,0 +1,14 @@
+body{
+  text-align: center;
+  background: #000;
+}
+a{
+  display: block;
+  color: #fff;
+  background: #000;
+  text-decoration: none;
+  padding:10px;
+}
+a :hover{
+  background: #f00;
+}

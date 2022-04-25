@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ランディングページ（Bootstrap）</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="main.js"></script>
+  </head>
+  
+  <body data-spy="scroll" data-target="#navbar">
+    <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+      <div class="navbar-header">
+        <button class="navbar-toggle" data-toggle="collapse" data-target="#menu">
+          <span class="sr-only"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">CODEPREP</a>
+      </div>
+      
+      <div id="menu" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li class="active">
+            <a href="#benefit">特徴</a>
+          </li>
+          <li>
+            <a href="#first">はじめての方へ</a>
+          </li>
+          <li>
+            <a href="#action">新規登録はこちら</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="container">
+      <div class="jumbotron">
+        <div class="inner center-block text-center">
+          <h1>CODEPREP</h1>
+          <h2>意外と簡単、<br>手を動かして学ぶプログラミング</h2>
+          <p>
+            CODEPREPは、プログラムを書いて動かしながら学ぶ実践型のプログラミング学習サービスです
+          </p>
+          <div>
+            <button class="btn btn-primary btn-lg">無料ではじめる</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="benefit" class="divider benefit"></div>
+
+      <div class="row benefit text-center">
+        <div class="col-md-4">
+          <h3>穴埋め式ドリルで手軽に学習</h3>
+          <img src="assets/img1.jpg" class="img-thumbnail">
+          <p>最初は穴埋め形式なのでテンポよく学習できます。基本を覚えたあと、エクササイズで演習しスキルを磨くことができます。 ゼロからはじめて実践レベルへ、まずはコーディングしてみましょう。</p>
+          <a href="/" class="btn btn-default">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            もっと詳しく
+          </a>
+        </div>
+        <div class="col-md-4">
+          <h3>あらゆる言語や目的に応じたブックを用意</h3>
+          <img src="assets/img2.jpg" class="img-thumbnail">
+          <p>入門編では様々な言語の基本的な使い方を学習し、基礎編や実践編でより目的に沿った内容を学習していきます。 </p>
+          <p>またHTML/CSS/JavaScriptだけでなく、PHPやRuby等の様々な言語の実行環境を用意していますので、面倒な環境の設定なしに学ぶことができます。</p>
+          <a href="/" class="btn btn-default">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            もっと詳しく
+          </a>
+        </div>
+        <div class="col-md-4">
+          <h3>みんなで学べるディスカッションボード</h3>
+          <img src="assets/img3.jpg" class="img-thumbnail">
+          <p>わからなくなったときは、ブック内のディスカッションボードを使って技術的な質問を気軽にすることができます。 協力し合うことで皆で楽しくプログラミングを学びましょう。</p>
+          <a href="/" class="btn btn-default">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            もっと詳しく
+          </a>
+        </div>
+      </div>
+
+      <div id="first" class="divider first"></div>
+
+      <div class="row first text-center">
+        <div class="col-md-6">
+          <h3>初めての方は入門から</h3>
+          <p>
+            「穴埋め問題」からはじめ、エクササイズでは実際にゼロからプログラミング力を試してみることができます。
+          </p>
+          <p>何から始めていいかわからない方は「はじめてのHTML」からはじめてみよう！</p>
+        </div>
+        <div class="col-md-6">
+          <img src="assets/img4.png" class="img-thumbnail">
+        </div>
+      </div>
+
+      <div id="action" class="divider action"></div>
+
+      <div class="row action">
+        <h3>今すぐ無料ではじめませんか？</h3>
+        <button class="btn btn-primary btn-lg">
+        　新規登録はこちら
+        </button>
+      </div>
+    </div>
+    <div class="footer">
+      <p class="text-right text-muted">Copyright &copy; 2017 CODEPREP All Rights Reserved.</p>
+    </div>
+  </body>
+</html>

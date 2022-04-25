@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+		<ul class="btnsmenu-js">
+			<li><a href="#nya01">あああああ</a></li>
+			<li><a href="#nya02">いいいいい</a></li>
+			<li><a href="#nya03">ううううう</a></li>
+		</ul>
+		<ul>
+			<li>
+				<div id="nya01" class="menuacc-js">
+					<h2>あああああ</h2>
+				</div>
+				<div class="contentacc">
+					内容
+					<br /><br /><br /><br /><br /><br />
+				</div>
+			</li>
+			<li>
+				<div id="nya02" class="menuacc-js">
+					<h2>いいいいい</h2>
+				</div>
+				<div class="contentacc">
+					内容
+					<br /><br /><br /><br /><br /><br />
+				</div>
+			</li>
+
+			<li>
+				<div id="nya03" class="menuacc-js">
+					<h2>ううううう</h2>
+				</div>
+				<div class="contentacc">
+					内容
+					<br /><br /><br /><br /><br /><br />
+				</div>
+			</li>
+		</ul>
+
+		<!--アコーディオンメニュー-->
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+		<script src="js/script.js"></script>
+
+		<!--スムーズスクロール-->
+		<script
+			type="text/javascript"
+			src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"
+		></script>
+		<script>
+			$(function () {
+				// #で始まるアンカーをクリックした場合に処理
+				$("a[href^=#]").click(function () {
+					// スクロールの速度
+					var speed = 400; // ミリ秒
+					// アンカーの値取得
+					var href = $(this).attr("href");
+					// 移動先を取得
+					var target = $(href == "#" || href == "" ? "html" : href);
+					// 移動先を数値で取得
+					var position = target.offset().top;
+					// スムーススクロール
+					$("body,html").animate({ scrollTop: position }, speed, "swing");
+					return false;
+				});
+			});
+		</script>
+	</body>
+</html>

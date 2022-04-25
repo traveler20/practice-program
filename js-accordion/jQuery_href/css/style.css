@@ -1,0 +1,38 @@
+.btnsmenu-js {
+	margin: 0;
+	padding: 0;
+	margin-bottom: 300px;
+}
+
+.btnsmenu-js li {
+	float: left;
+	margin-right: 10px;
+	list-style: none;
+}
+
+.btnsmenu-js li a {
+	display: block;
+	padding: 10px 20px;
+	color: #fff;
+	background: #000;
+	cursor: pointer;
+}
+
+.contentacc {
+	display: none;
+	padding: 10px;
+	background: #f19c75;
+}
+
+.menuacc-js h2 {
+	margin: 10px 0;
+	padding: 10px;
+	line-height: 20px;
+	color: #fff;
+	background: #000;
+	cursor: pointer;
+}
+
+.menuacc-js h2 {
+	display: block;
+}

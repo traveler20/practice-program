@@ -1,0 +1,97 @@
+body {
+  margin: 0;
+  padding: 20px;
+  background: #94DBF5;
+  font-size: 16px;
+}
+
+.steps {
+  list-style: none;
+  /*stepを横並びに設定*/
+  display: flex;
+}
+
+.step {
+  /*ソース内の空白を無視*/
+  white-space: nowrap;
+  /*ヌルっと動くアニメーション*/
+  transition: 0.3s ease-in-out;
+  background: #003459;
+  position: relative;
+  height: 50px;
+  line-height: 50px;
+  /*step右側に30pxの余白*/
+  margin-right: 30px;
+  /*step内の横幅は20px余白*/
+  padding: 0 20px;
+}
+
+.step > a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.step:last-child {
+  /*最後のリストは右側の余白無しに*/
+  margin-right: 0;
+}
+
+
+/*パンくずリスト左の▶部分*/
+.step::before {
+  transition: 0.3s ease-in-out;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -25px;
+  border-left: 25px solid transparent;
+  border-top: 25px solid #003459;
+  border-bottom: 25px solid #003459;
+}
+
+.step:first-child::before {
+  display: none;
+}
+
+/*パンくずリスト右の▶部分*/
+.step::after {
+  transition: 0.3s ease-in-out;
+  position: absolute;
+  top: 0;
+  right: -25px;
+  border-left: 25px solid #003459;
+  border-top: 25px solid transparent;
+  border-bottom: 25px solid transparent;
+  content: "";
+}
+
+.step:last-child::after {
+  display: none;
+}
+
+
+/*hover時の色変更*/
+.step:hover {
+  background: #007EA7;
+}
+
+.step:hover::before {
+  border-top-color: #007EA7;
+  border-bottom-color: #007EA7;
+}
+
+.step:hover::after {
+  border-left-color: #007EA7;
+}
+
+
+/*パンくずリストの両端を少し丸める*/
+.step:first-child {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.step:last-child {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}

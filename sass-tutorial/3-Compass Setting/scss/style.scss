@@ -1,0 +1,43 @@
+@import "compass";
+
+//ボックスの角丸（引数：R値）
+.boxB {
+	@include border-radius(5px);
+}
+
+//ボックスシャドウ（引数：X方向距離 Y方向距離 ぼかし距離 色の値）
+.boxA {
+	@include box-shadow(1px 2px 3px #444);
+}
+
+//ボックスのグラデーション（引数：方向 開始色 終了色）
+.boxC {
+	@include background(linear-gradient(left, white, #c00)); 
+}
+
+//Clearfix
+.boxE {
+	@include clearfix;
+}
+
+//透過
+.boxA {
+	 @include opacity(0.8);
+}
+
+//最小高さ
+.boxF {
+	@include min-height(200px);
+}
+
+//文字を隠す
+.boxG {
+	@include hide-text;
+}
+
+//画像のパスを補完、画像サイズを取得
+.boxA {
+	background-image: image-url("compass-logo1.png");
+	width: image-width("compass-logo1.png");
+	height: image-height("compass-logo1.png");
+}

@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+/*リストスタイルをフラットに（reset.css的な）*/
+ul, li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/*cardクラス（body全体）*/
+.card {
+  background: #0d47a1;
+  font-family: 'Lato', sans-serif;
+  box-shadow: 2px 2px 4px #999;
+  /*cardクラス全体を中央寄せに設定*/
+  margin-left: auto;
+  margin-right: auto;
+  width: 250px;
+  border: 1px solid #f5f5f5;
+  /*borderのコーナーを丸く*/
+  border-radius: 6px;
+}
+
+.avatar {
+  height: 85px;
+  padding-top: 20px;
+  /*背景を白に上書き*/
+  background: #fff;
+}
+
+.avatar-img {
+  width: 150px;
+  height: 150px;
+  background-image: url('./avatar.jpg');
+  /*画像の背景を白に上書き*/
+  background-color: #fff;
+  background-position: center;
+  /*画像サイズ設定*/
+  background-size: 150px 150px;
+  background-repeat: no-repeat;
+  /*画像部分を丸く設定*/
+  border-radius: 50%;
+  border: 3px solid #f5f5f5;
+  margin: 0 auto;
+}
+
+.profile {
+  padding-top: 85px;
+}
+
+.me {
+  margin-bottom: 20px;
+  color: #fff;
+  text-align: center;
+}
+
+.name {
+  font-size: 26px;
+  margin-bottom: 5px;
+}
+
+.role, .company {
+  color: #e3e3e3;
+}
+
+.contact {
+  padding: 20px 0;
+  /*contactクラス上部分にborderを設定*/
+  border-top: 1px solid #f5f5f5;
+  text-align: center;
+}
+
+.contact a,
+.contact a:link,
+.contact a:visited,
+.contact a:hover,
+.contact a:active {
+  color: #fff;
+}

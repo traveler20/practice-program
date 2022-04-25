@@ -1,0 +1,32 @@
+/*tab全体の幅*/
+.tab {
+  width: 500px;
+}
+
+/*tab-nav部分のスタイリング*/
+.tab-nav {
+  display: flex;
+}
+.tab-nav-item {
+  margin-right: 2px;
+  background: #ccc;
+  color: #000;
+  /*tab-navの大きさ調整はここで調整する*/
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px 5px 0 0;
+}
+.tab-nav-item.is-active {
+  background: #000;
+  color: #fff;
+}
+
+/*tab-contents部分のスタイリング*/
+.tab-contents {
+  border: 1px solid #ccc;
+  padding: 20px;
+}
+/*初期設定ではtab-contentsは全て非表示に*/
+.tab-contents-item {
+  display: none;
+}

@@ -1,0 +1,39 @@
+@import "compass";
+@import "reset";
+@import "mixin";
+
+body{
+	background-color: #ddd;
+	padding: 100px;
+}
+p,ul,li {
+	margin-bottom: 20px;
+}
+
+.logo{
+	@include sprite-background(compass-logo1, $sprites-map01, $sprites-img01, 1);
+	&:hover{
+		@include sprite-background(compass-logo2, $sprites-map01, $sprites-img01, 1);
+	}
+}
+
+li a {
+	.blt{
+		@include sprite-background(icon_bullet_list1, $sprites-map01, $sprites-img01, 1);
+		float: left;
+		margin-right: 5px;
+	}
+	&:hover{
+		.blt{
+			@include sprite-background(icon_bullet_list2, $sprites-map01, $sprites-img01, 1);
+		}
+	}
+}
+
+.btnNext a {
+	@include sprite-background(btn_slide_next_new, $sprites-map01, $sprites-img01, 1);
+}
+
+.btnPrev a {
+	@include sprite-background(btn_slide_prev_new, $sprites-map01, $sprites-img01, 1);
+}

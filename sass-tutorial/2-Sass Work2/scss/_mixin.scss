@@ -1,0 +1,35 @@
+/* --------------------------------------------------------------------
+mixin.scss
+-------------------------------------------------------------------- */
+
+//Clearfix
+@mixin clearfix() {
+	&:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+}
+
+//角丸
+@mixin kadomaru($value) {
+	-moz-border-radius: $value;
+	-webkit-border-radius: $value;
+	border-radius: $value;
+}
+
+// テキストを隠す
+@mixin hide-text {
+	font: 0/0 a;
+	color: transparent;
+	text-shadow: none;
+	background-color: transparent;
+	border: 0;
+}
+
+// ブロック要素を左右センター寄せにする
+@mixin center-block {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}

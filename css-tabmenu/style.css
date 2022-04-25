@@ -1,0 +1,64 @@
+/*タブ切り替え全体のスタイル*/
+.tabs {
+	background-color: #fff;
+	/*タブに影をつける*/
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+	/*タブ全体の横幅設定*/
+	width: 700px;
+	/*タブの位置調整（autoで中央寄せ）*/
+	margin-top: 50px;
+	margin: 0 auto;
+	/*タブ内の余白設定*/
+	padding-bottom: 40px;
+}
+
+/*タブのスタイル*/
+.tab_item {
+	/*タブタイトルの幅を三分割に（ここで数の調整が可能）*/
+	width: calc(100% / 3);
+	/*タブタイトルの高さ*/
+	height: 50px;
+	line-height: 50px;
+	/*タブタイトルのフォント設定*/
+	font-size: 16px;
+	text-align: center;
+	color: #565656;
+	font-weight: bold;
+	/*タブタイトル下の線を設定（不要なら削除）*/
+	border-bottom: 3px solid #1b7c26;
+	/*タブタイトルの背景色*/
+	background-color: #d9d9d9;
+	display: block;
+	float: left;
+	transition: all 0.2s ease;
+}
+/*タブアイテムにカーソルを当てたとき*/
+.tab_item:hover {
+	opacity: 0.75;
+}
+
+/*ラジオボタンを全て消す*/
+input[name="tab_item"] {
+	display: none;
+}
+
+/*タブ切り替えの中身のスタイル*/
+.tab_content {
+	display: none;
+	padding: 40px 40px 0;
+	clear: both;
+	overflow: hidden;
+}
+
+/*選択されているタブのコンテンツのみを表示*/
+#tab1:checked ~ #tab1_content,
+#tab2:checked ~ #tab2_content,
+#tab3:checked ~ #tab3_content {
+	display: block;
+}
+
+/*選択されているタブのスタイルを変える*/
+.tabs input:checked + .tab_item {
+	background-color: #1b7c26;
+	color: #fff;
+}

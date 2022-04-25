@@ -1,0 +1,31 @@
+.mb60{
+	margin-bottom: 60px;
+}
+.swiper-container{
+	text-align: center;
+}
+.swiper-container .swiper-slide img{
+  /*sliderコンテンツの画像幅はここで調整*/
+	max-width: 500px;
+	width: 100%;
+	height: auto;
+}
+.prettyprint{
+	border: none;
+	background: #fafafa;
+	color: #697d86;
+}
+#thumbs {
+      height: 20%;
+      box-sizing: border-box;
+      padding: 10px 0;
+}
+#thumbs .swiper-slide {
+    width: 20%;
+    height: 100%;
+    opacity: 0.2;
+    cursor: pointer;
+}
+#thumbs .swiper-slide-active {
+    opacity: 1;
+}

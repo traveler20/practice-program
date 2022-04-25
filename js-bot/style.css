@@ -1,0 +1,176 @@
+*:focus {
+	outline: none;
+}
+
+/* =============== main =============== */
+body {
+	max-width: 500px;
+	margin: 0 auto;
+	font-family: sans-serif, monospace;
+}
+
+.screen-wrap {
+	margin: 0 auto;
+	height: 100vh;
+	padding-top: 40px;
+	background-color: rgb(241, 214, 219);
+}
+
+.back {
+	margin-right: 6px;
+	font-size: 20px;
+	padding: 6px;
+	color: black;
+}
+
+.topIcon {
+	padding: 6px;
+	background-color: #fff;
+	color: rgb(63, 63, 63);
+	font-size: 16px;
+	border-radius: 50%;
+}
+
+header {
+	max-width: 500px;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	z-index: 10;
+	background-color: rgb(211, 210, 210);
+	border-bottom: 1px solid rgb(175, 175, 175);
+}
+
+h1 {
+	margin: 0;
+	padding: 10px;
+	font-size: 14px;
+}
+
+.main-screen {
+	padding: 10px 10px 50px;
+}
+
+.msg-wrap {
+	max-width: 500px;
+}
+
+/* ================ my =============== */
+.myMsg-wrap {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+
+.myMsg {
+	max-width: 170px;
+	margin: 0 12px 0 0;
+	padding: 8px;
+	background-color: #fff;
+	font-size: 14px;
+	border-radius: 6px;
+	display: inline-block;
+	position: relative;
+	word-break: break-all;
+}
+
+.myMsg:after {
+	content: "";
+	position: absolute;
+	top: 3px;
+	right: -19px;
+	border: 8px solid transparent;
+	border-left: 18px solid #fff;
+	-webkit-transform: rotate(-35deg);
+	transform: rotate(-35deg);
+}
+
+.myTIme {
+	margin-right: 5%;
+	font-size: 8px;
+	text-align: right;
+}
+
+/* =============== cat =============== */
+.catIcon {
+	padding: 6px;
+	background-color: #fff;
+	color: rgb(63, 63, 63);
+	font-size: 14px;
+	border-radius: 50%;
+}
+
+.catMsg {
+	max-width: 170px;
+	margin: 15px 0 0 10px;
+	padding: 8px;
+	background-color: #fff;
+	font-size: 14px;
+	border-radius: 6px;
+	display: inline-block;
+	position: relative;
+	word-break: break-all;
+}
+
+.catMsg:after {
+	content: "";
+	display: inline-block;
+	position: absolute;
+	bottom: 10px;
+	left: -19px;
+	border: 8px solid transparent;
+	border-right: 18px solid #fff;
+	-webkit-transform: rotate(335deg);
+	transform: rotate(335deg);
+}
+
+.catTIme {
+	margin-left: 12%;
+	font-size: 8px;
+}
+
+/* ============== send =============== */
+.msg-wrap {
+	width: 100%;
+	padding: 8px 5px;
+	position: fixed;
+	bottom: 0;
+	display: flex;
+	justify-content: center;
+}
+
+#inp {
+	width: 80vw;
+	padding: 8px;
+	margin: 0;
+	border: 1px solid rgb(151, 151, 151);
+	border-radius: 10px;
+	font-size: 16px;
+}
+
+#btn {
+	padding-left: 2px;
+	font-size: 20px;
+	border: none;
+	background: transparent;
+}
+
+/* ========== レスポンシブ =========== */
+@media (min-width: 561px) {
+	.screen-wrap {
+		border-radius: 10px;
+	}
+
+	header {
+		border-radius: 10px 10px 0 0;
+	}
+
+	#inp {
+		width: 420px;
+	}
+
+	.back,
+	#btn {
+		cursor: pointer;
+	}
+}

@@ -1,0 +1,124 @@
+// _setting.scss
+// --------------------------------------------------------------------
+
+// --------------------------------------------------------------------
+// Global values
+// --------------------------------------------------------------------
+
+// Global colors
+// -------------------------
+$black:                 #000000;
+$lightBlack:            #333333;
+$darkGray:              #666666;
+$gray:                  #999999;
+$lightGray:             #cccccc;
+$white:                 #ffffff;
+$red:                   #c0171d;
+$blue:                  #20baee;
+
+// Scaffolding
+// -------------------------
+$bodyBackground:        $white;
+$textColor:             $lightBlack;
+$primaryColor:          $red;
+
+// Links
+// -------------------------
+$linkColor:             $primaryColor;
+$linkColorHover:        lighten($primaryColor,30%);
+
+// Typography
+// -------------------------
+$baseFontFamily:        'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
+$baseFontSize:          100%;
+$baseLineHeight:        1.4;
+
+// Indivisual
+// -------------------------
+$contentWidth_pc:       1024px;
+$contentWidth_tab:      768px;
+$contentWidth_sp:       480px;
+$maincontentWidth_pc:   740px;
+$sidebarWidth_pc:       250px;
+
+// --------------------------------------------------------------------
+// Typography
+// --------------------------------------------------------------------
+body {
+	background-color: $bodyBackground;
+	position: relative;
+	color: $textColor;
+	font-family: $baseFontFamily;
+	font-size: $baseFontSize;
+	line-height: $baseLineHeight;
+}
+a {
+	color: $linkColor;
+	text-decoration: underline;
+}
+a:hover {
+	color: $linkColorHover;
+	text-decoration: none;
+}
+
+// Headings
+// -------------------------
+h1, h2, h3, h4, h5, h6 {
+	font-weight: bold;
+}
+
+h1 { @include font-size(24); }
+h2 { @include font-size(20); }
+h3 { @include font-size(16); }
+h4 { @include font-size(14); }
+h5 { @include font-size(12); }
+h6 { @include font-size(10); }
+
+// Body text
+// -------------------------
+p,li,dt,dd {
+	@include font-size(12);
+	line-height: $baseLineHeight;
+}
+
+// Emphasis & misc
+// -------------------------
+small   { font-size: 85%; }
+strong  { font-weight: bold; }
+em      { font-style: italic; }
+cite    { font-style: normal; }
+
+
+// --------------------------------------------------------------------
+// 余白調整用のclass
+// margin-top,margin-bottom及びpadding-top,padding-bottomを5pxずつ生成
+// 出力例:
+//   .mt0 { margin-top: 0px !important; }
+//   .mt5 { margin-top: 5px !important; }
+//   .mt10 { margin-top: 10px !important; }
+// --------------------------------------------------------------------
+
+$spaceClass:   true !default;   //使う,使わない：true,false
+$spacePadding: false !default;  //使う,使わない：true,false
+$endValue:     10 !default;     //生成するclassの数
+
+@if $spaceClass {
+	@for $i from 0 through $endValue {
+		.mt#{$i * 5} {
+			margin-top: 5px * $i !important;
+		}
+		.mb#{$i * 5} {
+			margin-bottom: 5px * $i !important;
+		}
+		@if $spacePadding {
+			.pt#{$i * 5} {
+				padding-top: 5px * $i !important;
+			}
+			.pb#{$i * 5} {
+				padding-bottom: 5px * $i !important;
+			}
+		}
+	}
+}
+
+

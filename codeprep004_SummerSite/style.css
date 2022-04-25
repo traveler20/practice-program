@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/*文章部分のスタイリング*/
+.heading {
+  /*中央に設定*/
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  /*ソース中のホワイトスペースを無視*/
+  white-space: nowrap;
+  color: #fff;
+  /*背景色と要素をうまい感じに調整する*/
+  mix-blend-mode: overlay;
+}

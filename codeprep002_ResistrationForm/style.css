@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+/*h1タグのスタイリング*/
+h1 {
+  color: #333;
+  font-family: Arial;
+  text-align: center;
+}
+
+/*リスト部分のスタイリング*/
+ul {
+  /*背景の設定*/
+  background-color: #EEE;
+  /*borderボックスの設定*/
+  border: 1px solid #CCC;
+  /*リストの・を消す*/
+  list-style-type: none;
+  margin: 0 auto;
+  /*リスト全体とボックス間の余白設定*/
+  padding: 20px;
+  /*リスト全体を真ん中に寄せる*/
+  text-align: center;
+  width: 600px;
+}
+
+li {
+  /*インラインレベルのブロックを生成*/
+  display: inline-block;
+  height: 40px;
+  /*行の高さを設定*/
+  line-height: 40px;
+  margin: 0 auto;
+  text-align: center;
+  /*文字を下寄せ*/
+  vertical-align: bottom;
+}
+
+/*liタグの奇数番目のスタイリング*/
+li:nth-child(odd) {
+  color: #666;
+  font-family: "Arial Black";
+  font-size: 20px;
+  width: 40px;
+}
+
+/*liタグの偶数番目のスタイリング*/
+li:nth-child(even) {
+  /*文字の右にborderを設定*/
+  border-right: 1px solid #999;
+  color: #666;
+  font-family: Arial;
+  font-size: 20px;
+  /*border右側の余白設定*/
+  margin-right: 15px;
+  /*文字とborderの間余白設定*/
+  padding-right: 15px;
+}

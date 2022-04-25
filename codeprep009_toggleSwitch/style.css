@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+  padding: 20px;
+}
+
+.toggle-switch {
+  margin-bottom: 5px;
+}
+
+/*トグルスイッチ部分のスタイリング*/
+.border {
+  position: relative;
+  background: #2B2D42;
+  width: 100px;
+  height: 50px;
+  display: block;
+  border-radius: 25px;
+  cursor: pointer;
+  text-indent: -9999px;
+}
+
+/*ボタン白色部分*/
+.border::after {
+  position: absolute;
+  content: "";
+  width: 40px;
+  height: 40px;
+  background: #fff;
+  top: 5px;
+  left: 5px;
+  border-radius: 50%;
+  transition-duration: 0.2s;
+}
+
+/*チェック後の色変更*/
+.button:checked + .border {
+  background: #D81543;
+}
+
+/*チェック後のボタン移動*/
+.button:checked + .border::after {
+  left: calc(100% - 5px);
+  transform: translateX(-100%);
+}
+
+/*チェックボックスを消す*/
+.button {
+  display: none;
+}
+
+.border:active::after {
+  width: 60%;
+}
+
+.toggle-switch.gold .button:checked + .border {
+  background: #F2D300;
+}
+
+.toggle-switch.green .button:checked + .border {
+  background: #00A468;
+}

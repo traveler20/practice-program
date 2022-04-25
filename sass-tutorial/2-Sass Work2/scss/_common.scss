@@ -1,0 +1,55 @@
+/* --------------------------------------------------------------------
+common.scss
+-------------------------------------------------------------------- */
+
+#wrapper{
+	width: 960px;
+	@include clearfix;
+	margin: 0 auto;
+
+	//ヘッダー
+	header{
+		border: #666666 solid #000;
+		.logo{
+			width: 300px;
+			height: 200px;
+			margin: 10px;
+		}
+	}
+
+	//グロナビ
+	nav{
+		@include clearfix;
+		li{
+			float: left;
+			width: 200px;
+			background: #ffffff 0 0 no-repeat;
+			color: #666666;
+			&.top{
+				background-image: url(/img/nav-top.png);
+			}
+			&.about{
+				background-image: url(/img/nav-about.png);
+			}
+			&.news{
+				background-image: url(/img/nav-news.png);
+			}
+			&.blog{
+				background-image: url(/img/nav-blog.png);
+			}
+		}
+	}
+
+	//フッター
+	#footer{
+		border: #666666 solid #000;
+		p{
+			&.copyright{
+				color: #666666;
+			}
+			&.logo{
+				margin: 10px;
+			}
+		}
+	}
+}

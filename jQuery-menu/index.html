@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>JavaScriptでドロップダウンメニューを実装する方法</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+</head>
+<body>
+  <ul class="nav">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">ファイル</a>
+      <ul>
+        <li><a href="#">新規</a></li>
+        <li><a href="#">編集</a></li>
+      </ul>
+    </li>
+    <li><a href="#">News</a>
+      <ul>
+        <li><a href="#">最新</a></li>
+        <li><a href="#">過去</a></li>
+        <li><a href="#">Top5</a></li>
+      </ul>
+    </li>
+  </ul>
+  <div class="content">
+    <p>メニュー部分へマウスを移動するとサイドメニューがドロップダウンメニューとして表示されます。</p>
+  </div>
+
+  <script>
+    $(function() {
+      var nav = $('.nav');
+      $('li', nav)
+      .mouseover(function(e) {
+          $('ul', this).stop().slideDown('fast');
+      })
+      .mouseout(function(e) {
+          $('ul', this).stop().slideUp('fast');
+      });
+    });
+  </script>
+</body>
+</html>

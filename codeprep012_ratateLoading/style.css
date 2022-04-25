@@ -1,0 +1,45 @@
+.backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+/*スピナーの設定*/
+.spinner {
+  /*位置を中央寄せに設定*/
+  position: absolute;
+  top: calc(50% - 50px);
+  left: calc(50% - 50px);
+
+  /*スピナーの作成*/
+  width: 100px;
+  height: 100px;
+  border-top: 14px solid #fff;
+  border-right: 14px solid #fff;
+  border-bottom: 14px solid #fff;
+  border-left: 14px solid #8c618d;
+  border-radius: 50%;
+
+  /*スピナーのアニメーション設定*/
+  animation-name: spin;
+  /*0.8秒に一回転させる*/
+  animation-duration: 0.8s;
+  /*永遠に回らせるやつ*/
+  animation-iteration-count: infinite;
+  /*滑らかに回らせるやつ*/
+  animation-timing-function: linear;
+}
+
+@keyframes spin {
+  0% {
+    /*要素の回転表示*/
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}

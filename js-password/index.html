@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>パスワード入力ページ</title>
+	</head>
+	<body>
+		<style>
+			body {
+				background: #222;
+			}
+			.password-btn {
+				display: inline-block;
+				padding: 0.8em 4em;
+				text-decoration: none;
+				color: #333;
+				background: #fff;
+				border: solid 2px #333;
+				border-radius: 30px;
+				transition: 0.4s;
+			}
+			.password-btn:hover {
+				color: #fff;
+				background: #333;
+				border: solid 2px #fff;
+			}
+			input {
+				cursor: pointer;
+			}
+		</style>
+
+		<input
+			type="button"
+			class="password-btn"
+			value="Detail"
+			onclick="gate1();"
+		/>
+		<input
+			type="button"
+			class="password-btn"
+			value="Detail"
+			onclick="gate2();"
+		/>
+		<input
+			type="button"
+			class="password-btn"
+			value="Detail"
+			onclick="gate3();"
+		/>
+
+		<script type="text/javascript">
+			function gate1() {
+				const UserInput = prompt("パスワードを入力して下さい:", "");
+				if (/\W+/g.test(UserInput)) {
+					alert("半角英数字のみを入力して下さい。");
+				} else if (UserInput != null) {
+					location.href = UserInput + ".html";
+				}
+			}
+		</script>
+		<script type="text/javascript">
+			function gate2() {
+				const UserInput = prompt("パスワードを入力して下さい:", "");
+				if (/\W+/g.test(UserInput)) {
+					alert("半角英数字のみを入力して下さい。");
+				} else if (UserInput != null) {
+					location.href = "./" + UserInput + "/index.html";
+				}
+			}
+		</script>
+		<script type="text/javascript">
+			function gate3() {
+				const UserInput = prompt("パスワードを入力して下さい:", "");
+				if (/\W+/g.test(UserInput)) {
+					alert("半角英数字のみを入力して下さい。");
+				} else if (UserInput != null) {
+					location.href = "./work/" + UserInput + ".html";
+				}
+			}
+		</script>
+	</body>
+</html>

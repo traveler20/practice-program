@@ -1,0 +1,35 @@
+// _mixin.scss
+// --------------------------------------------------------------------
+
+// ====================================================================
+// 関数名: sprite-background
+// --------------------------------------------------------------------
+// 概要: sprite画像指定用
+// 引数: 
+//   $name:        画像名
+//   $sprites-map: $sprites-map0*
+//   $sprites-img: $sprites-img0*
+//   $ratio:       デバイス・ピクセル比（Retina対応の場合:2）
+// 使用例: @include sprite-background(画像名, $sprites-map01, $sprites-img01, 2);
+// --------------------------------------------------------------------
+// 
+// オプション：sprite画像格納フォルダ指定（$sprites-map0*と$sprites-img0*はセット）
+$sprites-map01: sprite-map("sprite01/*.png");
+$sprites-img01: sprite-url($sprites-map01);
+// $sprites-map02: sprite-map("sprite02/*.png");
+//$sprites-img02: sprite-url($sprites-map02);
+// $sprites-map03: sprite-map("sprite03/*.png");
+//$sprites-img03: sprite-url($sprites-map03);
+// 
+// ====================================================================
+@mixin sprite-background($name, $sprites-map, $sprites-img, $ratio:1) {
+	background-image: $sprites-img;
+	background-repeat: no-repeat;
+	$width: image-width(sprite-path($sprites-map));
+	display: block;
+	height: image-height(sprite-file($sprites-map, $name)) / $ratio;
+	width: image-width(sprite-file($sprites-map, $name)) / $ratio;
+	$ypos: round(nth(sprite-position($sprites-map, $name), 2));
+	background-position: 0 ($ypos / $ratio);
+	@include background-size(($width / $ratio) auto);
+}

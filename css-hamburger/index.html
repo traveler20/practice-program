@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<div id="hamburg">
+			<input id="input" type="checkbox" />
+			<!-- inputタグ -->
+			<label id="label1" for="input"
+				><div class="line1"></div>
+				<div class="line2"></div>
+				<div class="line3"></div
+			></label>
+			<!-- inputタグのためのlabel（三本線） -->
+			<div id="content">
+				<!-- チェックが入ったら見せるメニュー -->
+				<ul class="list">
+					<li>
+						<a href="#"><i class="fas fa-home"></i> About</a>
+						<ul>
+							<li><a href="#">link1</a></li>
+							<li><a href="#">link2</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">Study</a>
+						<ul>
+							<li><a href="#">link1</a></li>
+							<li><a href="#">link2</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">Column</a>
+						<ul>
+							<li><a href="#">link1</a></li>
+							<li><a href="#">link2</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<style>
+			/*inputタグのチェックボックス非表示*/
+			#input{
+				display: none;
+			}
+
+			/*3本線を作る*/
+			.line1,.line2,.line3{
+				width: 20px;
+				height: 3px;
+				background-color: black;
+				margin: 3px;
+			}
+
+			/*メニューのデザイン*/
+			#content{
+				background-color: lightpink;
+				width: 200px;
+				height: 100%;
+				transform: translateX(-210px); /*左側の奥の奥に埋めておく*/
+			}
+
+			/*チェックが入ったら見せる*/
+			#input:checked ~ #content{
+				transform: translatex(0px);　/*通常値に戻す*/
+			}
+		</style>
+	</body>
+</html>

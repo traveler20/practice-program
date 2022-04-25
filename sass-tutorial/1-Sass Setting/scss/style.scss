@@ -1,0 +1,23 @@
+#main {
+	width: 600px;
+	p {
+		margin: 0 0 1em;
+		em {
+			color: #f00;
+		}
+	}
+}
+
+$red: #ff1122;
+
+.notes {
+	color: $red;
+}
+#main {
+	.notesArea {
+		border: 1px solid $red;
+	}
+}
+
+/*出るコメント*/
+//出ないコメント

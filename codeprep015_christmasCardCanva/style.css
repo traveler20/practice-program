@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+body {
+  margin: 0;
+}
+
+body:after {
+  background: url("images/christmas_tree.png") right center no-repeat;
+  content: "";
+  height: 500px;
+  right: -100px;
+  position: absolute;
+  top: 0;
+  width: 350px;
+  z-index: 10;
+}
+
+#christmas {
+  top: 10px;
+  color: #d8e5f1;
+  font-size: 50px;
+  font-family: Arial;
+  left: 20px;
+  margin: 0;
+  position: absolute;
+  z-index: 10;
+}

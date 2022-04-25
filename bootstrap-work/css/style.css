@@ -1,0 +1,18 @@
+div.img-hidden {
+	height: 300px;
+	overflow: hidden;
+}
+
+div.container-m {
+	margin-top: 80px;
+}
+
+div.container-m {
+	margin-top: 80px;
+}
+
+footer.footer {
+	background-color: #333;
+	color: #fff;
+	text-align: center;
+}

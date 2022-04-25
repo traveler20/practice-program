@@ -1,0 +1,128 @@
+@charset "utf-8";
+/*
+ * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
+ * http://cssreset.com
+ */
+/* line 121, ../scss/_reset.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 131, ../scss/_reset.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 134, ../scss/_reset.scss */
+body {
+  line-height: 1;
+}
+
+/* line 137, ../scss/_reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 140, ../scss/_reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 144, ../scss/_reset.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 148, ../scss/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 5, ../scss/style.scss */
+body {
+  background-color: #ddd;
+  padding: 100px;
+}
+
+/* line 9, ../scss/style.scss */
+p, ul, li {
+  margin-bottom: 20px;
+}
+
+/* line 13, ../scss/style.scss */
+.logo {
+  background-image: url('../img/sprite01-se1c8f4c267.png');
+  background-repeat: no-repeat;
+  display: block;
+  height: 88px;
+  width: 423px;
+  background-position: 0 0;
+  -webkit-background-size: 423px auto;
+  -moz-background-size: 423px auto;
+  -o-background-size: 423px auto;
+  background-size: 423px auto;
+}
+/* line 15, ../scss/style.scss */
+.logo:hover {
+  background-image: url('../img/sprite01-se1c8f4c267.png');
+  background-repeat: no-repeat;
+  display: block;
+  height: 88px;
+  width: 423px;
+  background-position: 0 -88px;
+  -webkit-background-size: 423px auto;
+  -moz-background-size: 423px auto;
+  -o-background-size: 423px auto;
+  background-size: 423px auto;
+}
+
+/* line 21, ../scss/style.scss */
+li a .blt {
+  background-image: url('../img/sprite01-se1c8f4c267.png');
+  background-repeat: no-repeat;
+  display: block;
+  height: 12px;
+  width: 12px;
+  background-position: 0 -188px;
+  -webkit-background-size: 423px auto;
+  -moz-background-size: 423px auto;
+  -o-background-size: 423px auto;
+  background-size: 423px auto;
+  float: left;
+  margin-right: 5px;
+}
+/* line 27, ../scss/style.scss */
+li a:hover .blt {
+  background-image: url('../img/sprite01-se1c8f4c267.png');
+  background-repeat: no-repeat;
+  display: block;
+  height: 12px;
+  width: 12px;
+  background-position: 0 -176px;
+  -webkit-background-size: 423px auto;
+  -moz-background-size: 423px auto;
+  -o-background-size: 423px auto;
+  background-size: 423px auto;
+}

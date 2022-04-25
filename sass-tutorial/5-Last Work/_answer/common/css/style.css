@@ -1,0 +1,606 @@
+@charset "UTF-8";
+/*
+*
+* Beeworks Sass/Compass Template
+*
+* Copyright (c) 2014 Beeworks Co., Ltd All rights reserved
+* 
+* @version : 0
+* @author  : http://webnaut.jp/ - webnaut@beeworks.co.jp
+* 
+*/
+/* ===========================================
+※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※
+　このCSSファイルはSassから生成されていますので、
+　編集しないようご注意ください。by Beeworks
+※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※
+============================================ */
+/* line 8, ../scss/_extend.scss */
+.clearfix, #nav #grobalNav, #wrapper, #mainContent section, #footer {
+  *zoom: 1;
+}
+/* line 12, ../scss/_extend.scss */
+.clearfix:after, #nav #grobalNav:after, #wrapper:after, #mainContent section:after, #footer:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*
+ * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
+ * http://cssreset.com
+ */
+/* line 121, ../scss/_reset.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 131, ../scss/_reset.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 134, ../scss/_reset.scss */
+body {
+  line-height: 1;
+}
+
+/* line 137, ../scss/_reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 140, ../scss/_reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 144, ../scss/_reset.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 148, ../scss/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 47, ../scss/_setting.scss */
+body {
+  background-color: white;
+  position: relative;
+  color: #333333;
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", sans-serif;
+  font-size: 100%;
+  line-height: 1.4;
+}
+
+/* line 55, ../scss/_setting.scss */
+a {
+  color: #c0171d;
+  text-decoration: underline;
+}
+
+/* line 59, ../scss/_setting.scss */
+a:hover {
+  color: #f08084;
+  text-decoration: none;
+}
+
+/* line 66, ../scss/_setting.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+}
+
+/* line 70, ../scss/_setting.scss */
+h1 {
+  font-size: 150%;
+}
+
+/* line 71, ../scss/_setting.scss */
+h2 {
+  font-size: 125%;
+}
+
+/* line 72, ../scss/_setting.scss */
+h3 {
+  font-size: 100%;
+}
+
+/* line 73, ../scss/_setting.scss */
+h4 {
+  font-size: 87.5%;
+}
+
+/* line 74, ../scss/_setting.scss */
+h5 {
+  font-size: 75%;
+}
+
+/* line 75, ../scss/_setting.scss */
+h6 {
+  font-size: 62.5%;
+}
+
+/* line 79, ../scss/_setting.scss */
+p, li, dt, dd {
+  font-size: 75%;
+  line-height: 1.4;
+}
+
+/* line 86, ../scss/_setting.scss */
+small {
+  font-size: 85%;
+}
+
+/* line 87, ../scss/_setting.scss */
+strong {
+  font-weight: bold;
+}
+
+/* line 88, ../scss/_setting.scss */
+em {
+  font-style: italic;
+}
+
+/* line 89, ../scss/_setting.scss */
+cite {
+  font-style: normal;
+}
+
+/* line 107, ../scss/_setting.scss */
+.mt0 {
+  margin-top: 0px !important;
+}
+
+/* line 110, ../scss/_setting.scss */
+.mb0 {
+  margin-bottom: 0px !important;
+}
+
+/* line 107, ../scss/_setting.scss */
+.mt5 {
+  margin-top: 5px !important;
+}
+
+/* line 110, ../scss/_setting.scss */
+.mb5 {
+  margin-bottom: 5px !important;
+}
+
+/* line 107, ../scss/_setting.scss */
+.mt10 {
+  margin-top: 10px !important;
+}
+
+/* line 110, ../scss/_setting.scss */
+.mb10 {
+  margin-bottom: 10px !important;
+}
+
+/* line 107, ../scss/_setting.scss */
+.mt15 {
+  margin-top: 15px !important;
+}
+
+/* line 110, ../scss/_setting.scss */
+.mb15 {
+  margin-bottom: 15px !important;
+}
+
+/* line 107, ../scss/_setting.scss */
+.mt20 {
+  margin-top: 20px !important;
+}
+
+/* line 110, ../scss/_setting.scss */
+.mb20 {
+  margin-bottom: 20px !important;
+}
+
+/* line 107, ../scss/_setting.scss */
+.mt25 {
+  margin-top: 25px !important;
+}
+
+/* line 110, ../scss/_setting.scss */
+.mb25 {
+  margin-bottom: 25px !important;
+}
+
+/* line 107, ../scss/_setting.scss */
+.mt30 {
+  margin-top: 30px !important;
+}
+
+/* line 110, ../scss/_setting.scss */
+.mb30 {
+  margin-bottom: 30px !important;
+}
+
+/* line 107, ../scss/_setting.scss */
+.mt35 {
+  margin-top: 35px !important;
+}
+
+/* line 110, ../scss/_setting.scss */
+.mb35 {
+  margin-bottom: 35px !important;
+}
+
+/* line 107, ../scss/_setting.scss */
+.mt40 {
+  margin-top: 40px !important;
+}
+
+/* line 110, ../scss/_setting.scss */
+.mb40 {
+  margin-bottom: 40px !important;
+}
+
+/* line 107, ../scss/_setting.scss */
+.mt45 {
+  margin-top: 45px !important;
+}
+
+/* line 110, ../scss/_setting.scss */
+.mb45 {
+  margin-bottom: 45px !important;
+}
+
+/* line 107, ../scss/_setting.scss */
+.mt50 {
+  margin-top: 50px !important;
+}
+
+/* line 110, ../scss/_setting.scss */
+.mb50 {
+  margin-bottom: 50px !important;
+}
+
+/* line 4, ../scss/_layout.scss */
+.container {
+  width: 1024px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 11, ../scss/_layout.scss */
+#header #logo {
+  margin: 20px;
+  background-image: url('../img/sprite01-sa751020946.png');
+  background-repeat: no-repeat;
+  display: block;
+  height: 59px;
+  width: 261px;
+  background-position: 0 0;
+  -webkit-background-size: 261px auto;
+  -moz-background-size: 261px auto;
+  -o-background-size: 261px auto;
+  background-size: 261px auto;
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+
+/* line 19, ../scss/_layout.scss */
+#nav {
+  margin-bottom: 20px;
+}
+/* line 23, ../scss/_layout.scss */
+#nav #grobalNav li {
+  float: left;
+  width: 16.66667%;
+}
+/* line 26, ../scss/_layout.scss */
+#nav #grobalNav li a {
+  padding: 10px;
+  background-color: #666666;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  border-right: 1px solid #999999;
+}
+/* line 34, ../scss/_layout.scss */
+#nav #grobalNav li a:hover {
+  background-color: #999999;
+}
+
+/* line 43, ../scss/_layout.scss */
+#mainImg {
+  margin-bottom: 20px;
+}
+/* line 45, ../scss/_layout.scss */
+#mainImg p img {
+  width: 100%;
+}
+
+/* line 56, ../scss/_layout.scss */
+#mainContent {
+  float: left;
+  width: 740px;
+}
+/* line 59, ../scss/_layout.scss */
+#mainContent h2 {
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #cccccc;
+  padding-left: 25px;
+  position: relative;
+}
+/* line 65, ../scss/_layout.scss */
+#mainContent h2:before {
+  display: block;
+  position: absolute;
+  top: 20%;
+  left: 0;
+  background-image: url('../img/sprite01-sa751020946.png');
+  background-repeat: no-repeat;
+  display: block;
+  height: 14px;
+  width: 20px;
+  background-position: 0 -46.5px;
+  -webkit-background-size: 130.5px auto;
+  -moz-background-size: 130.5px auto;
+  -o-background-size: 130.5px auto;
+  background-size: 130.5px auto;
+  content: "";
+}
+/* line 74, ../scss/_layout.scss */
+#mainContent section {
+  margin-bottom: 20px;
+}
+/* line 77, ../scss/_layout.scss */
+#mainContent section figure {
+  float: left;
+  width: 35%;
+}
+/* line 80, ../scss/_layout.scss */
+#mainContent section figure img {
+  width: 100%;
+  -webkit-box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
+}
+/* line 85, ../scss/_layout.scss */
+#mainContent section .section-content {
+  float: right;
+  width: 62%;
+}
+/* line 88, ../scss/_layout.scss */
+#mainContent section .section-content h3, #mainContent section .section-content p {
+  margin-bottom: 10px;
+}
+
+/* line 96, ../scss/_layout.scss */
+.btn {
+  padding: 10px;
+  background-color: #cccccc;
+  display: inline-block;
+  color: #333333;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  -moz-transition: opacity 0.12s linear;
+  -webkit-transition: opacity 0.12s linear;
+  transition: opacity 0.12s linear;
+}
+/* line 48, ../scss/_mixin.scss */
+.btn:hover {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+  opacity: 0.7;
+}
+/* line 106, ../scss/_layout.scss */
+.btn.btn1 {
+  background-color: #c0171d;
+  color: white;
+}
+/* line 110, ../scss/_layout.scss */
+.btn.btn2 {
+  display: block;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+}
+
+/* line 118, ../scss/_layout.scss */
+#sidebar {
+  float: right;
+  width: 250px;
+}
+/* line 121, ../scss/_layout.scss */
+#sidebar section {
+  margin-bottom: 40px;
+}
+/* line 123, ../scss/_layout.scss */
+#sidebar section h2 {
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #cccccc;
+  padding-left: 25px;
+  position: relative;
+}
+/* line 129, ../scss/_layout.scss */
+#sidebar section h2:before {
+  display: block;
+  position: absolute;
+  top: 20%;
+  left: 0;
+  content: "";
+}
+/* line 139, ../scss/_layout.scss */
+#sidebar section.list h2:before {
+  background-image: url('../img/sprite01-sa751020946.png');
+  background-repeat: no-repeat;
+  display: block;
+  height: 14px;
+  width: 20px;
+  background-position: 0 -115px;
+  -webkit-background-size: 130.5px auto;
+  -moz-background-size: 130.5px auto;
+  -o-background-size: 130.5px auto;
+  background-size: 130.5px auto;
+}
+/* line 143, ../scss/_layout.scss */
+#sidebar section.list li {
+  margin-bottom: 10px;
+  padding-left: 20px;
+  position: relative;
+}
+/* line 147, ../scss/_layout.scss */
+#sidebar section.list li:before {
+  display: block;
+  position: absolute;
+  top: 2px;
+  left: 0;
+  background-image: url('../img/sprite01-sa751020946.png');
+  background-repeat: no-repeat;
+  display: block;
+  height: 11.33333px;
+  width: 8.66667px;
+  background-position: 0 -19.66667px;
+  -webkit-background-size: 87px auto;
+  -moz-background-size: 87px auto;
+  -o-background-size: 87px auto;
+  background-size: 87px auto;
+  content: "";
+}
+@media only screen and (max-width: 480px) {
+  /* line 143, ../scss/_layout.scss */
+  #sidebar section.list li {
+    display: block;
+    margin: 0 -20px 0px;
+    border-bottom: 1px solid #cccccc;
+    padding-left: 0;
+  }
+  /* line 160, ../scss/_layout.scss */
+  #sidebar section.list li:before {
+    display: none;
+  }
+  /* line 163, ../scss/_layout.scss */
+  #sidebar section.list li:last-child {
+    border-bottom: none;
+  }
+  /* line 166, ../scss/_layout.scss */
+  #sidebar section.list li a {
+    position: relative;
+    display: block;
+    margin: 0;
+    padding: 15px 35px 15px 20px;
+    background: #eee;
+    color: #333333;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  /* line 176, ../scss/_layout.scss */
+  #sidebar section.list li a:after {
+    display: block;
+    position: absolute;
+    top: 40%;
+    right: 15px;
+    background-image: url('../img/sprite01-sa751020946.png');
+    background-repeat: no-repeat;
+    display: block;
+    height: 17px;
+    width: 13px;
+    background-position: 0 -29.5px;
+    -webkit-background-size: 130.5px auto;
+    -moz-background-size: 130.5px auto;
+    -o-background-size: 130.5px auto;
+    background-size: 130.5px auto;
+    content: "";
+  }
+}
+/* line 189, ../scss/_layout.scss */
+#sidebar section.banner h2:before {
+  background-image: url('../img/sprite01-sa751020946.png');
+  background-repeat: no-repeat;
+  display: block;
+  height: 14px;
+  width: 20px;
+  background-position: 0 -87px;
+  -webkit-background-size: 130.5px auto;
+  -moz-background-size: 130.5px auto;
+  -o-background-size: 130.5px auto;
+  background-size: 130.5px auto;
+}
+/* line 193, ../scss/_layout.scss */
+#sidebar section.banner li {
+  margin-bottom: 10px;
+}
+/* line 195, ../scss/_layout.scss */
+#sidebar section.banner li img {
+  width: 100%;
+  -moz-transition: opacity 0.12s linear;
+  -webkit-transition: opacity 0.12s linear;
+  transition: opacity 0.12s linear;
+}
+/* line 48, ../scss/_mixin.scss */
+#sidebar section.banner li img:hover {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
+  opacity: 0.6;
+}
+/* line 204, ../scss/_layout.scss */
+#sidebar section.text h2:before {
+  background-image: url('../img/sprite01-sa751020946.png');
+  background-repeat: no-repeat;
+  display: block;
+  height: 14px;
+  width: 20px;
+  background-position: 0 -73px;
+  -webkit-background-size: 130.5px auto;
+  -moz-background-size: 130.5px auto;
+  -o-background-size: 130.5px auto;
+  background-size: 130.5px auto;
+}
+/* line 208, ../scss/_layout.scss */
+#sidebar section.text p {
+  margin-bottom: 10px;
+}
+
+/* line 217, ../scss/_layout.scss */
+#footer {
+  border-top: 1px solid #cccccc;
+  padding: 10px 0;
+}
+/* line 221, ../scss/_layout.scss */
+#footer .copyright {
+  float: left;
+}
+/* line 224, ../scss/_layout.scss */
+#footer .company {
+  float: right;
+}

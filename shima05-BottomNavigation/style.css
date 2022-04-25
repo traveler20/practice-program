@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    display: flex;
+    font-size: 2rem;
+    min-height: 100vh;
+}
+main {
+    width: 700px;
+    margin: 0 auto;
+}
+aside {
+    width: 20%;
+    min-width: 250px;
+    display: flex;
+    flex-direction: column;
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+div {
+    margin-top: auto;
+    height: 300px;
+}
+footer {
+    display: none;
+}
+
+/*レスポンシブ（ナビを下に固定）*/
+@media screen and (max-width: 1000px) {
+    body {
+        height: 1500px;
+        flex-direction: column;
+    }
+    main {
+        width: 100%;
+        flex: 1;
+    }
+    footer {
+        display: block;
+        /*ナビ分の余白を残す*/
+        margin-bottom: 48px;
+    }
+    /*sidefooterを消す*/
+    div {
+        display: none;
+    }
+    /*固定ナビのスタイリング*/
+    aside {
+        /*固定する*/
+        position: fixed;
+        /*下に0*/
+        bottom: 0;
+        /*横幅いっぱいに*/
+        width: 100%;
+    }
+    /*listは横並びに設定*/
+    ul {
+        display: flex;
+    }
+    /*flex:1;で伸び縮みするように設定*/
+    li {
+        flex: 1;
+    }
+}

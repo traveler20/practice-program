@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+.pop_btn > li {
+  /*liタグをブロックで囲む*/
+  display: inline-block;
+  height: 110px;
+  margin: 0;
+  position: relative;
+  width: 110px;
+}
+
+.pop_btn > li a {
+  background-color: #0B9;
+  border: 5px solid #0B9;
+  /*形を円に設定*/
+  border-radius: 500px;
+  color: #FFF;
+  display: block;
+  font-family: "Arial Black";
+  font-size: 17px;
+  height: 70px;
+  left: 15px;
+  line-height: 70px;
+  position: absolute;
+  text-align: center;
+  /*liの・を消す*/
+  text-decoration: none;
+  top: 15px;
+  transition: all ease 0.2s;
+  width: 70px;
+}
+
+/*hoverしたときの動作*/
+.pop_btn > li a:hover {
+  /*背景色変更*/
+  background-color: #FFF;
+  /*文字色変更*/
+  color: #0B9;
+  /*大きさや位置の調整*/
+  height: 100px;
+  left: 0;
+  line-height: 100px;
+  top: 0;
+  width: 100px;
+}

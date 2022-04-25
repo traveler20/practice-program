@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>CSSタブメニュー</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div class="tabs">
+			<!--menu1-->
+			<input id="tab1" type="radio" name="tab_item" checked />
+			<label class="tab_item" for="tab1">メニュー１</label>
+
+			<!--menu2-->
+			<input id="tab2" type="radio" name="tab_item" />
+			<label class="tab_item" for="tab2">メニュー２</label>
+
+			<!--menu3-->
+			<input id="tab3" type="radio" name="tab_item" />
+			<label class="tab_item" for="tab3">メニュー３</label>
+
+			<!--content1-->
+			<div class="tab_content" id="tab1_content">
+				<div class="tab_content_description">
+					<p class="c-txtsp">メニュー１の内容がここに入ります</p>
+				</div>
+			</div>
+
+			<!--content2-->
+			<div class="tab_content" id="tab2_content">
+				<div class="tab_content_description">
+					<p class="c-txtsp">メニュー２の内容がここに入ります</p>
+				</div>
+			</div>
+
+			<!--content3-->
+			<div class="tab_content" id="tab3_content">
+				<div class="tab_content_description">
+					<p class="c-txtsp">メニュー３の内容がここに入ります</p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

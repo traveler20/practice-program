@@ -1,0 +1,27 @@
+#main article {
+	margin-bottom: 50px;
+}
+#main article h1 {
+	font-size: 140%;
+}
+#main article ul, #main article p {
+	margin-bottom: 1.5em;
+}
+#main article ul li.list1 {
+	font-size: 110%;
+}
+#main article ul li.list2 {
+	font-size: 120%;
+}
+#main article ul li.list3 {
+	font-size: 130%;
+}
+#main article ul li.list4 {
+	font-size: 140%;
+}
+#main article ul li.list5 {
+	font-size: 150%;
+}
+#main article p.notes {
+	color: red;
+}

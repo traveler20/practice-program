@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: 21px;
+  padding: 20px;
+  background: #073B4C;
+}
+
+.cool-link {
+  margin-right: 5px;
+  display: inline-block;
+}
+
+/*文字部分のスタイリング*/
+.cool-link a {
+  text-decoration: none;
+  position: relative;
+  transition: 0.25s ease-in-out;
+  color: #FFF;
+}
+
+.cool-link:hover a {
+  color: #FFD166;
+}
+
+/*下線部分のスタイリング*/
+.cool-link a::before {
+  width: 0;
+  height: 3px;
+  background: #FFD166;
+  position: absolute;
+  bottom: -5px;
+  content: "";
+}
+
+.cool-link.left-to-right:hover a::before,
+.cool-link.right-to-left:hover a::before,
+.cool-link.center-to-side:hover a::before {
+  transition: 0.25s ease-in-out;
+  width: 100%;
+}
+
+.cool-link.right-to-left a::before {
+  right: 0;
+}
+
+.cool-link.center-to-side a::before {
+  left: 50%;
+  transform: translateX(-50%);
+}
